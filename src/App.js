@@ -18,6 +18,7 @@ function App() {
             <Route path="/pages/ExpectIn" component={ExpectIn} />
           </Switch>
         </Router>
+        <Layout />
       </Layout>
     </React.Fragment>
   );
