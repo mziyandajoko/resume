@@ -1,63 +1,62 @@
 import React, { Component } from "react";
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button, Jumbotron } from "react-bootstrap";
 import Footer from "../components/Footer";
+import Assets from "../assets/profile.jpg";
 class About extends Component {
   render() {
     return (
       <React.Fragment>
         <section>
-          <Row>
-            <Col>
-              <p>I'm Joko Mziyanda</p>
-              <span>Web/App Developer</span>
-              <div>
-                <img src="" alt="Profile " />
+          <Jumbotron fluid>
+            <Row>
+              <Col>
+                <p>I'm Joko Mziyanda</p>
+                <span>a Web/App Developer</span>
+                <div>
+                  <h2>Hi</h2>
+                  <p>
+                    I am a Web/App developer based in Cape Town South South
+                    Afrika with 3 years of working experiance. I have a persion
+                    for web design and love to create for web and mobile
+                    devieces.
+                  </p>
+                </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam doloribus praesentium voluptatem esse beatae aliquam
-                  dolore corrupti sequi rerum officiis eos hic quas, at
-                  blanditiis libero aspernatur nemo ratione earum?
+                  <Button variant="primary">Message Me</Button>
                 </p>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
+          </Jumbotron>
         </section>
         <section>
           <Row>
             <Col>
-              <h1>What I can do</h1>
+              <h2>What I can do</h2>
             </Col>
           </Row>
           <Row>
             <Col lg={6}>
-              <img src="" alt="Profile Image" />
+              <img src={Assets} alt="Profile " width="100%" height="70%" />
             </Col>
             <Col lg={6}>
-              <span>Web/App Developer</span>
+              <h4>Developing what you need</h4>
               <div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam doloribus praesentium voluptatem esse beatae aliquam
-                  dolore corrupti sequi rerum officiis eos hic quas, at
-                  blanditiis libero aspernatur nemo ratione earum?
+                  I'm a Devceloper who puts client needs a heart, So I know how
+                  to create your website and App to run across devieces using
+                  the latest and best technologies available. Flutter for App
+                  development is the technolgy I using for any app development
+                  and as this is the best technolgy for Android and iOS as it
+                  uses on code base.
                 </p>
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={6}>
-              <span>Web/App Developer</span>
-              <div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quibusdam doloribus praesentium voluptatem esse beatae aliquam
-                  dolore corrupti sequi rerum officiis eos hic quas, at
-                  blanditiis libero aspernatur nemo ratione earum?
+                  For web development I use React as it has best advantages than
+                  other frameworks and just plain HTML,CSS and JavaScript and
+                  there is support for React the heavey lifting on the Dom is
+                  taken care of on the background as a developer I dont have to
+                  worry about the support other browsers and rendering issues.
                 </p>
               </div>
-            </Col>
-            <Col lg={6}>
-              <img src="#" alt="Profile Image" />
             </Col>
           </Row>
         </section>
@@ -65,9 +64,9 @@ class About extends Component {
           <h1>I can help</h1>
           <h4>I'm currently available for freelance or permanent work</h4>
           <p>
-            Have any Question or project that I can work on or what to know more
-            about what I can offer and my experiance and expertation,please do
-            get in touch.
+            Have any Question or project that you want to get started, think I
+            can work on or what to know more about what I can offer and my
+            experiance ,please do get in touch.
           </p>
           <Button>Message Me</Button>
         </section>
