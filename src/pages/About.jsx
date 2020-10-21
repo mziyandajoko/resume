@@ -2,20 +2,34 @@ import React, { Component } from "react";
 import { Row, Col, Button, Jumbotron } from "react-bootstrap";
 import Footer from "../components/Footer";
 import Assets from "../assets/profile.jpg";
+import styled from "styled-components";
+const Wrapper = styled.section`
+  text-align: center;
+  background-color: #d5ede3;
+  color: #90c242;
+  font-weight: bold;
+  `;
+  const Name = styled.p`
+  font-family: italic;
+  font-size: 40px;
+`;
+const Center = styled.h2`
+text-align: center;
+padding: 15px;
+`;
 class About extends Component {
+
   render() {
     return (
       <React.Fragment>
-        <section>
-          <Jumbotron fluid>
+        <Wrapper>
+          
             <Row>
               <Col>
-                <p>I'm Joko Mziyanda</p>
-                <span>a Web/App Developer</span>
-                <div>
-                  <h2>Hi</h2>
+                <Name>I'm Joko Mziyanda</Name>
+                <div>                  
                   <p>
-                    I am a Web/App developer based in Cape Town South South
+                    I am a <strong>Web/App developer</strong> based in Cape Town South South
                     Afrika with 3 years of working experiance. I have a persion
                     for web design and love to create for web and mobile
                     devieces.
@@ -26,12 +40,12 @@ class About extends Component {
                 </p>
               </Col>
             </Row>
-          </Jumbotron>
-        </section>
+          
+        </Wrapper>
         <section>
           <Row>
             <Col>
-              <h2>What I can do</h2>
+              <Center>What I can do</Center>
             </Col>
           </Row>
           <Row>

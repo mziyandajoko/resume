@@ -1,6 +1,15 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import styled from "styled-components";
 import Layout from "./Layout";
+const Link = styled.a`
+  color: #90c242;
+`;
+const Footer = styled.div`
+background-color: #d5ede3;
+color: #90c242;
+font-weight: bold;
+`;
 
 function Footer() {
   return (
@@ -8,16 +17,16 @@ function Footer() {
       <Layout>
         <Row>
           <Col lg={3}>
-            <a href="#">facebook</a>
+            <Link href="#">facebook</Link>
           </Col>
           <Col lg={3}>
-            <a href="#">GitHub</a>
+            <Link href="#">GitHub</Link>
           </Col>
           <Col lg={3}>
-            <a href="#">LinkedIn</a>
+            <Link href="#">LinkedIn</Link>
           </Col>
           <Col lg={3}>
-            <a href="#">StackOverflow</a>
+            <Link href="#">StackOverflow</Link>
           </Col>
         </Row>
       </Layout>
