@@ -3,49 +3,60 @@ import { Row, Col, Button, Jumbotron } from "react-bootstrap";
 import Footer from "../components/Footer";
 import Assets from "../assets/profile.jpg";
 import styled from "styled-components";
-const Wrapper = styled.section`
+
+ styled.Jumbotron =`
   text-align: center;
   background-color: #d5ede3;
   color: #90c242;
   font-weight: bold;
   `;
+  const Wrapper = styled.section`
+    text-align: center;
+    `;
+  const Center = styled.div`
+    text-align: center;
+    `;
   const Name = styled.p`
   font-family: italic;
+  text-align:center;
   font-size: 40px;
-`;
-const Center = styled.h2`
-text-align: center;
-padding: 15px;
+  `;
+  const CenteredHeader = styled.h3`
+  color: #d5ede3;  
+  text-align: center;
+  padding: 15px;
 `;
 class About extends Component {
 
   render() {
     return (
       <React.Fragment>
-        <Wrapper>
-          
+        <Jumbotron>
+            
             <Row>
               <Col>
                 <Name>I'm Joko Mziyanda</Name>
-                <div>                  
+                <Center>                  
                   <p>
-                    I am a <strong>Web/App developer</strong> based in Cape Town South South
+                    I am a <strong>Web/App developer</strong> based in Cape Town South
                     Afrika with 3 years of working experiance. I have a persion
                     for web design and love to create for web and mobile
-                    devieces.
+                    devices.
                   </p>
-                </div>
+                </Center>
                 <p>
-                  <Button variant="primary">Message Me</Button>
+                 
+                  <Button href="/pages/Contact">Message Me</Button>
+
                 </p>
               </Col>
             </Row>
           
-        </Wrapper>
+        </Jumbotron>
         <section>
           <Row>
             <Col>
-              <Center>What I can do</Center>
+              <CenteredHeader>What I can do</CenteredHeader>
             </Col>
           </Row>
           <Row>
@@ -74,16 +85,22 @@ class About extends Component {
             </Col>
           </Row>
         </section>
-        <section>
-          <h1>I can help</h1>
-          <h4>I'm currently available for freelance or permanent work</h4>
+        <Wrapper>
+          <CenteredHeader>I can help</CenteredHeader>
+          <h6>I'm currently available for freelance or permanent work</h6>
+          <Row>
+            <Col lg={3}></Col>
+          <Col offset={3} lg={6}>
           <p>
             Have any Question or project that you want to get started, think I
             can work on or what to know more about what I can offer and my
             experiance ,please do get in touch.
           </p>
-          <Button>Message Me</Button>
-        </section>
+          </Col>
+          </Row>
+          <Button href="/pages/Contact">Message Me</Button>
+        </Wrapper>
+        <br/>
         <Footer />
       </React.Fragment>
     );
