@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Row, Col, Button, Jumbotron } from "react-bootstrap";
+import { Row, Col, Button, Jumbotron, } from "react-bootstrap";
 import Footer from "../components/Footer";
+import AlertDismissible from "../components/Alert";
 import Assets from "../assets/profile.jpg";
 import styled from "styled-components";
 
@@ -27,7 +28,7 @@ import styled from "styled-components";
   padding: 15px;
 `;
 class About extends Component {
-
+ 
   render() {
     return (
       <React.Fragment>
@@ -54,8 +55,10 @@ class About extends Component {
           
         </Jumbotron>
         <section>
+          <AlertDismissible />
           <Row>
             <Col>
+
               <CenteredHeader>What I can do</CenteredHeader>
             </Col>
           </Row>
