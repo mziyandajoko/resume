@@ -1,21 +1,12 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import Assets from "../assets/profile.jpg";
+import './Navigation.css';
 
 const NavigationBar = () => (
-  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-    <Navbar.Brand href="#home">
-      <spa>
-        <img
-          src={Assets}
-          alt="Profile "
-          width="50"
-          height="50"
-          className="d-inline-block align-top"
-        />{" "}
-        <img />
-      </spa>
-      Joko Mziyanda Resume
+  <Navbar className="Navbar" collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar.Brand href="/">
+      <span>Joko Mziyanda</span>      
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">

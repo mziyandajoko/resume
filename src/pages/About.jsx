@@ -4,12 +4,14 @@ import Footer from "../components/Footer";
 import AlertDismissible from "../components/Alert";
 import Assets from "../assets/profile.jpg";
 import styled from "styled-components";
+import '../App.css'
+import Layout from "../components/Layout";
 
  styled.Jumbotron =`
   text-align: center;
   background-color: #d5ede3;
   color: #90c242;
-  font-weight: bold;
+  font-weight: bold; 
   `;
   const Wrapper = styled.section`
     text-align: center;
@@ -21,11 +23,15 @@ import styled from "styled-components";
   font-family: italic;
   text-align:center;
   font-size: 40px;
+  font-weight:bold;
   `;
   const CenteredHeader = styled.h3`
-  color: #d5ede3;  
+  color: #00000;
+  font-weight:Bold;  
   text-align: center;
   padding: 15px;
+  font-size: 40px;
+  letter-spacing:1px;
 `;
 class About extends Component {
  
@@ -33,27 +39,25 @@ class About extends Component {
     return (
       <React.Fragment>
         <Jumbotron>
+        <div>
             
             <Row>
-              <Col>
+            <Col lg={3}></Col>
+            <Col offset={3} lg={6}>
                 <Name>I'm Joko Mziyanda</Name>
-                <Center>                  
                   <p>
                     I am a <strong>Web/App developer</strong> based in Cape Town South
                     Afrika with 3 years of working experiance. I have a persion
                     for web design and love to create for web and mobile
                     devices.
                   </p>
-                </Center>
-                <p>
-                 
                   <Button href="/pages/Contact">Message Me</Button>
-
-                </p>
               </Col>
             </Row>
-          
+          </div>
         </Jumbotron>
+        <Layout>
+
         <section>
           <AlertDismissible />
           <Row>
@@ -64,7 +68,7 @@ class About extends Component {
           </Row>
           <Row>
             <Col lg={6}>
-              <img src={Assets} alt="Profile " width="100%" height="70%" />
+              <img  className="rounded-circle"  src={Assets} alt="Profile" />
             </Col>
             <Col lg={6}>
               <h4>Developing what you need</h4>
@@ -88,6 +92,7 @@ class About extends Component {
             </Col>
           </Row>
         </section>
+        </Layout>
         <Wrapper>
           <CenteredHeader>I can help</CenteredHeader>
           <h6>I'm currently available for freelance or permanent work</h6>
@@ -97,14 +102,13 @@ class About extends Component {
           <p>
             Have any Question or project that you want to get started, think I
             can work on or what to know more about what I can offer and my
-            experiance ,please do get in touch.
+            experiance.Please do get in touch.
           </p>
           </Col>
           </Row>
           <Button href="/pages/Contact">Message Me</Button>
         </Wrapper>
         <br/>
-        <Footer />
       </React.Fragment>
     );
   }

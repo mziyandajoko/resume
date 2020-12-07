@@ -1,0 +1,22 @@
+ .Navbar img{
+    width: 100px;
+ }
+@media (max-width: 768px) {  
+    h1{
+        font-size: 15px;
+    }
+ .brand_image img{
+     display: none;
+ }
+    
+    .Navbar span {
+        color: red;
+        text-align: center;
+    }
+}
+
+        .Navbar {
+            text-align: center;
+        }
+        
+      
