@@ -55,8 +55,8 @@ class About extends Component {
             </Row>
           </div>
         </Jumbotron>
-        <Layout>
 
+        <Layout>
         <section>
           <AlertDismissible />
           <Row>
@@ -91,7 +91,6 @@ class About extends Component {
             </Col>
           </Row>
         </section>
-        </Layout>
         <Wrapper>
           <CenteredHeader>I can help</CenteredHeader>
           <h6>I'm currently available for freelance or permanent work</h6>
@@ -108,6 +107,7 @@ class About extends Component {
           <Button href="/pages/Contact">Message Me</Button>
         </Wrapper>
         <br/>
+        </Layout>
       </React.Fragment>
     );
   }

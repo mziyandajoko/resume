@@ -1,4 +1,5 @@
 import React from "react";
+import Layout from '../components/Layout'
 import LoadWorkData from "../components/LoadWorkData";
 import WorkData from "../dataFiles/WorkData";
 import Footer from "../components/Footer";
@@ -10,9 +11,10 @@ function Work() {
 
   return (
     <React.Fragment>
+      <Layout>
       <h1>Work Experiance</h1>
       <span>{data}</span>
-      <Footer />
+      </Layout>
     </React.Fragment>
   );
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import Footer from "../components/Footer";
+import Layout from '../components/Layout'
 import { Row, Col, Form, Button } from "react-bootstrap";
 import styled from "styled-components";
 
 function Contact(params) {
   return (
-    <>
+    <Layout>
       <h1>Contact page </h1>
       <Form>
         <Row>
@@ -31,8 +31,7 @@ function Contact(params) {
           <Button type="submit">Submit</Button>
         </Col>
       </Form>
-      <Footer />
-    </>
+    </Layout>
   );
 }
 
