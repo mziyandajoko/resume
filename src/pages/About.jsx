@@ -48,8 +48,7 @@ class About extends Component {
                   <p>
                     I am a <strong>Web/App developer</strong> based in Cape Town South
                     Afrika with 3 years of working experiance. I have a persion
-                    for web design and love to create for web and mobile
-                    devices.
+                    for web and mobile App development.
                   </p>
                   <Button href="/pages/Contact">Message Me</Button>
               </Col>
@@ -75,10 +74,10 @@ class About extends Component {
               <div>
                 <p>
                   I'm a Devceloper who puts client needs a heart, So I know how
-                  to create your website and App to run across devieces using
-                  the latest and best technologies available. Flutter for App
-                  development is the technolgy I using for any app development
-                  and as this is the best technolgy for Android and iOS as it
+                  to create your website and App to run on across platforms using
+                  the latest and best technologies available.</p>
+                  <p>I specialized with React and  Flutter,For App
+                  development I use Flutter as this is the best technolgy for Android and iOS as it
                   uses on code base.
                 </p>
                 <p>

@@ -40,7 +40,7 @@ function Footer() {
         <p><a href="#" class="icoGithub" title="GitHub"><i class="fa fa-GitHub"></i>GitHub</a></p>
         </div>
       </div>
-    	<div class="col-md-3">
+    	<div class="col-md-3 col-sm-6">
       <p><a href="#" class="icoBitBucket" title="BitBucket"><i class="fa fa-BitBucket"></i>BitBucket</a></p>				
 		</div>
     </div>
